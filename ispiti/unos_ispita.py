@@ -1,5 +1,5 @@
 from datetime import date
-from Labosi.kolegij import get_kolegij
+from kolegij import get_kolegij
 
 def unos_ispita(kolegiji, redni_broj):
     ispit = {}
