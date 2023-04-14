@@ -4,3 +4,9 @@ def ispis_kolegija(kolegij):
 
 def get_kolegij(redni_broj, kolegij):
     return f'\t{redni_broj}. {kolegij["Ime"]}'
+
+
+def ispis_svih_kolegija(kolegiji):
+    print("Popis svih kolegija: ")
+    for kolegij in kolegiji:
+        ispis_kolegija(kolegij)

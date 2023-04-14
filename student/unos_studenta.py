@@ -1,4 +1,6 @@
 from ispiti import get_ispit
+from utilities import unos_intervala
+
 def unos_studenta(ispiti, redni_broj):
     student = {}
     student["Ime"] = input(f"Unesite ime {redni_broj}. studenta: ")
@@ -8,7 +10,7 @@ def unos_studenta(ispiti, redni_broj):
     for i, ispit in enumerate(ispiti, start=1):
         print(get_ispit(i, ispit))
 
-    odabrani_ispit = int(input("Unesite kolegij: "))
+    odabrani_ispit = unos_intervala(1,i)
     student["Ispit"] = ispiti[odabrani_ispit - 1]
 
     return student
