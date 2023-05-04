@@ -2,7 +2,7 @@ def unos_intervala(min,max):
 
     while True:
         try:
-            broj = int(input(f"Unesite cijeli broj: "))
+            broj = int(input(f"Unesite cijeli broj u intervalu {min}-{max}: "))
 
             if broj < min or broj > max:
                 raise Exception(f"Broj nije u intervalu od {min} do {max}")
