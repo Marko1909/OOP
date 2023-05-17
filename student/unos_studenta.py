@@ -1,7 +1,7 @@
 from ispiti import get_ispit
 from utilities import unos_intervala
-from redovni_student import RedovniStudent
-from vanredni_student import VanredniStudent
+from .redovni_student import RedovniStudent
+from .vanredni_student import VanredniStudent
 
 
 def unos_studenta(ispiti, redni_broj):

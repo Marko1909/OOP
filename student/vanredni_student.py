@@ -1,5 +1,5 @@
-from student import Student
-from izracun_skolarine import IzracunSkolarine
+from .student import Student
+from .izracun_skolarine import IzracunSkolarine
 
 
 class VanredniStudent(Student, IzracunSkolarine):
